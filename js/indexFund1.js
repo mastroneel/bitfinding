@@ -98,7 +98,7 @@ Highcharts.chart('lineChart', {
   },
   colors: ['#ff1d55', '#ffb1bd'],
   data: {
-      csvURL: '../data/combinedtime.csv'
+      csvURL: window.location.origin + '/data/combinedtime.csv'
   },
   xAxis: {
       lineColor: '#21232e',
