@@ -194,7 +194,7 @@ path:hover.highcharts-point {
 
 .content-container section {
   display: none;
-  border-top: 1px solid #21232e;
+  border-top: 3px solid #21232e;
   max-width: 100vw; }
 
 .content-container .group-title {
@@ -212,14 +212,15 @@ path:hover.highcharts-point {
   font-weight: 600;
   text-align: center;
   color: #21232e;
-  border: 1px solid #21232e;
+  border: 3px solid #21232e;
   border-bottom: transparent; }
 
 .content-container label:hover {
   cursor: pointer; }
 
 .content-container input:checked + label {
-  border: 1px solid #21232e;
+  color: #ff6b86;
+  border: 3px solid #ff6b86;
   border-top: 3px solid #ff6b86;
   border-bottom: 3px solid #fff; }
 
