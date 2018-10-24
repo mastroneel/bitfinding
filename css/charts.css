@@ -10,7 +10,17 @@ body {
 
 .content-container {
   padding-top: 80px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (max-width: 480px) {
+  .content-container {
+    padding-left: 8px;
+    padding-right: 8px; } }
+.content-container .row {
+  margin: 0;
+  padding: 0; }
 
 .nav-background {
   height: 70px;
@@ -176,55 +186,111 @@ path:hover.highcharts-point {
     color: #21232e;
     font-weight: bold; }
 
-section {
+.divider {
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #21232e;
+  margin: 80px 15px 40px 15px; }
+
+.content-container section {
   display: none;
-  padding: 20px 0 0; }
+  border-top: 1px solid #21232e;
+  max-width: 100vw; }
 
-.group-title {
-  padding-top: 10px;
-  font-size: 14px;
-  margin-left: 10px; }
+.content-container .group-title {
+  padding-top: 80px;
+  font-size: 25px; }
 
-input {
+.content-container input {
   display: none; }
 
-label {
+.content-container label {
   display: inline-block;
-  margin: 0 0 -1px 10px;
-  padding: 5px 10px;
-  font-size: 12px;
+  margin: 0 0 -3px;
+  padding: 15px 25px;
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
   color: #21232e;
-  border: 3px solid #21232e; }
+  border: 1px solid #21232e;
+  border-bottom: transparent; }
 
-label:hover {
+.content-container label:hover {
   cursor: pointer; }
 
-input:checked + label {
-  color: #ff6b86;
-  border: 3px solid #ff6b86; }
+.content-container input:checked + label {
+  border: 1px solid #21232e;
+  border-top: 3px solid #ff6b86;
+  border-bottom: 3px solid #fff; }
 
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5,
-#tab6:checked ~ #content6,
-#tab7:checked ~ #content7,
-#tab8:checked ~ #content8,
-#tab9:checked ~ #content9,
-#tab10:checked ~ #content10,
-#tab11:checked ~ #content11,
-#tab12:checked ~ #content12,
-#tab13:checked ~ #content13,
-#tab14:checked ~ #content14,
-#tab15:checked ~ #content15,
-#tab16:checked ~ #content16,
-#tab17:checked ~ #content17,
-#tab18:checked ~ #content18,
-#tab19:checked ~ #content19,
-#tab20:checked ~ #content20 {
+.tab-group-1 #tab1:checked ~ #content1,
+.tab-group-1 #tab2:checked ~ #content2,
+.tab-group-1 #tab3:checked ~ #content3,
+.tab-group-1 #tab4:checked ~ #content4,
+.tab-group-1 #tab5:checked ~ #content5,
+.tab-group-2 #tab6:checked ~ #content6,
+.tab-group-2 #tab7:checked ~ #content7,
+.tab-group-2 #tab8:checked ~ #content8,
+.tab-group-2 #tab9:checked ~ #content9,
+.tab-group-2 #tab10:checked ~ #content10,
+.tab-group-3 #tab11:checked ~ #content11,
+.tab-group-3 #tab12:checked ~ #content12,
+.tab-group-3 #tab13:checked ~ #content13,
+.tab-group-3 #tab14:checked ~ #content14,
+.tab-group-3 #tab15:checked ~ #content15,
+.tab-group-4 #tab16:checked ~ #content16,
+.tab-group-4 #tab17:checked ~ #content17,
+.tab-group-4 #tab18:checked ~ #content18,
+.tab-group-4 #tab19:checked ~ #content19,
+.tab-group-4 #tab20:checked ~ #content20 {
   display: block; }
+
+@media (max-width: 900px) {
+  .content-container .group-title {
+    font-size: 22px; }
+
+  .content-container label {
+    padding: 10px 15px;
+    font-size: 14px; } }
+@media (max-width: 750px) {
+  .content-container .group-title {
+    font-size: 20px; }
+
+  .content-container label {
+    padding: 5px 10px;
+    font-size: 12px; } }
+@media (max-width: 625px) {
+  .content-container .group-title {
+    font-size: 18px; }
+
+  .content-container label {
+    padding: 5px;
+    font-size: 10px; } }
+@media (max-width: 480px) {
+  .content-container label {
+    padding: 5px;
+    font-size: 10px;
+    max-width: 70px; } }
+@media (max-width: 400px) {
+  .content-container label {
+    padding: 5px;
+    font-size: 10px;
+    max-width: 63px; } }
+@media (max-width: 350px) {
+  .content-container label {
+    padding: 5px;
+    font-size: 9px;
+    max-width: 58px; } }
+@media (max-width: 330px) {
+  .content-container label {
+    padding: 5px;
+    font-size: 8px;
+    max-width: 53px; } }
+@media (max-width: 767px) {
+  .content-container .col-xs-12 {
+    padding: 0; }
+
+  .line-chart, .donut-chart {
+    padding: 0 !important; } }
 
 /*# sourceMappingURL=app.css.map */
