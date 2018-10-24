@@ -1,4 +1,5 @@
 
+
 $(function () {
     var chart = new Highcharts.Chart({
         chart: {
@@ -97,8 +98,16 @@ Highcharts.chart('lineChart', {
       text: 'AAA Comparison',
   },
   colors: ['#ff1d55', '#ffb1bd'],
+  // data: {
+  //   this.axios.get(url).then(res=>{
+  //     csvURL: window.location.origin + '/data/combinedtime.csv'
+  //   })
+  // },
   data: {
-      csvURL: window.location.origin + '/data/combinedtime.csv'
+    // this.axios.get(url).then(res=>{
+    //   csvURL: window.location.origin + '/data/combinedtime.csv'
+    // })
+    csv: document.getElementById('csv').innerHTML
   },
   xAxis: {
       lineColor: '#21232e',
