@@ -111,12 +111,12 @@ Highcharts.chart('lineChart', {
   },
   xAxis: {
       lineColor: '#21232e',
-      lineWidth: 3,
+      lineWidth: 4,
   },
   yAxis: {
-    gridLineColor: 'transparent',
+    // gridLineColor: 'transparent',
     lineColor: '#21232e',
-    lineWidth: 3,
+    lineWidth: 4,
     title: {
       enabled: false
     }

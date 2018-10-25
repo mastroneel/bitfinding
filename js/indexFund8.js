@@ -103,12 +103,12 @@ Highcharts.chart('lineChart8', {
   },
   xAxis: {
       lineColor: '#21232e',
-      lineWidth: 5,
+      lineWidth: 4,
   },
   yAxis: {
-    gridLineColor: 'transparent',
+    // gridLineColor: 'transparent',
     lineColor: '#21232e',
-    lineWidth: 5,
+    lineWidth: 4,
     title: {
       enabled: false
     }
@@ -125,7 +125,7 @@ Highcharts.chart('lineChart8', {
   },
   plotOptions: {
     series: {
-      lineWidth: 5
+      lineWidth: 3
     },
     line: {
       marker: {
